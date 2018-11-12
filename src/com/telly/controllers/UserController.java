@@ -12,9 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.telly.dao.FormValidationGroup;
-import com.telly.dao.Reserve;
 import com.telly.dao.User;
-import com.telly.service.ReserveService;
 import com.telly.service.UserService;
 
 
@@ -24,9 +22,6 @@ public class UserController {
 
 	@Autowired
 	UserService userService;
-	
-	@Autowired
-	ReserveService reserveService;
 
 	@RequestMapping("/login")
 	public String showLogin() {
